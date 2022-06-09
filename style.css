@@ -1,0 +1,152 @@
+:root{
+    --branco_principal: #ffffff;
+    --cinza_secundario: #C0C0C0;
+    --bota_azul: #167BF7;
+    --cor_de_fundo: #00030C;
+    --fonte_principal: 'Inter';
+    --hover: #ff8ff8;
+}
+
+body{
+    background-color: var(--cor_de_fundo);
+    font-family: var( --fonte_principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url("imagens/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.container{
+    height:100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.container_caixa{
+    padding: 3rem;
+}
+
+.container_titulo{
+   
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+.container_imagem{
+    margin:1rem 0 2rem 0;
+    padding: 0.3m;
+}
+
+.container_botao{
+    background-color: var(--bota_azul);
+    border-radius: 8px;
+    padding: 0.5rem;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.container_botao:active{
+    background-color: red;
+    color: var(--cor_de_fundo);
+}
+
+.container_aviso{
+    font-size: 12px;
+    color: var(--cinza_secundario);
+}
+
+@media screen and (min-width:1080px) {
+    .secundario{
+        width: 90%;
+    }
+    
+}
+
+.container_botao--secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco_principal)
+}
+
+
+
+.descricao_titulo{
+   font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.4rem;
+}
+
+.descricao_texto{
+    font-size: 16px;
+    color: var(--cinza_secundario);
+
+}
+
+.secundario{
+    align-items: center;
+    
+}
+
+.secundario_botao{
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+
+.container_descricao{
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+.dispositivos_titulo{
+    font-size: 48px;
+    font-weight: 700;
+}
+.dispositivos_lista{
+    display: flex;
+    justify-content: center;   
+    list-style-type: none;
+    margin: 5rem 0;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.lista_item{
+    font-size: 32px;
+    font-weight: 700;
+}
+.dispositivos_rodape{
+    text-align: center;
+}
+.lista_rodape{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 ;
+}
+
+
+
+.lista_link{
+    margin-left:1rem ;
+}
+ .lista_link a:hover{
+    color: var(--bota_azul);
+ }
+
+ 
